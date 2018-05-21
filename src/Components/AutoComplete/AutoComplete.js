@@ -95,7 +95,7 @@ class AutoComplete extends React.Component {
     return (
       <div className="auto-complete-wrapper">
         <div className="auto-complete-input">
-          <input id="country-input" type="text" name="myCountry" placeholder="Country" value={this.state.currentInput} onChange={this.onInputValuechange} onKeyDown={this.onInputKeyDown}/>
+          <input id="country-input" placeholder="Type a country name" value={this.state.currentInput} onChange={this.onInputValuechange} onKeyDown={this.onInputKeyDown}/>
         </div>
         <div className="auto-complete-list">
           {this.state.filteredCountries.map((item, index) => <Country key={index} country={item} currentInput={this.state.currentInput} activeCountry={this.state.activeCountry} onCountryClick={this.onCountryClick}/>)}
