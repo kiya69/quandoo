@@ -2,6 +2,7 @@
   position: relative;
   display: inline-block;
   width: 200px;
+  text-align: left;
 }
 .auto-complete-list{
   position: absolute;
@@ -24,8 +25,13 @@
 }
 #country-input{
   width: 100%;
+  padding: 10px;
+  font-size: 16px;
 }
 .auto-complete-country.active{
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+input:focus{
+    outline: none;
 }

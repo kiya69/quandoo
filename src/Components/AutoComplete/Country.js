@@ -8,7 +8,6 @@ class Country extends React.Component {
 
   }
   onCountryClick(country){
-    console.log('click', country);
     this.props.onCountryClick(country)
   }
   render() {
