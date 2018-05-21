@@ -103,8 +103,6 @@ class AutoComplete extends React.Component {
       </div>
         );
     }
-
-
 }
 
 export default AutoComplete;
