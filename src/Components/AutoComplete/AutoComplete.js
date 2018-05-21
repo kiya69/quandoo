@@ -1,5 +1,4 @@
 import React from 'react';
-import List from './List';
 import './AutoComplete.css';
 import Country from './Country';
 
@@ -73,11 +72,9 @@ class AutoComplete extends React.Component {
     }
     let currentInput = input;//this.state.currentInput + input;
     let filteredCountries = [];
-    this.setState(
-      {
+    this.setState({
         currentInput: currentInput
-      }
-    )
+    })
     // this.state.currentInput += input
     //update this state filteredCountries
     // console.log('currentInput',currentInput);
